@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/end_screen_style.css" />
+    <script src="/js/scoreTable.js"></script>
+</head>
+<body class="main" onload="showRecordsTable();">
+    <div class="word-tetris">
+        <span class="letter-t1">T</span>
+        <span class="letter-e">E</span>
+        <span class="letter-t2">T</span>
+        <span class="letter-r">R</span>
+        <span class="letter-i">I</span>
+        <span class="letter-s">S</span>
+    </div>
+    <div id="endGame">
+        <p class="end-text">Игра окончена!</p>
+        <p id="endText">Ваш счет: </p>
+        <div class="score-table"></div>
+        <button type="button" class="refresh" onclick="location.href = 'https://tetristopia.com'">RESTART</button>
+    </div>
+</body>
+</html>

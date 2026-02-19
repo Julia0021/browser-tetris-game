@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/game_style.css" />
+</head>
+<body class="main">
+    <div class="word-tetris">
+        <span class="letter-t1">T</span>
+        <span class="letter-e">E</span>
+        <span class="letter-t2">T</span>
+        <span class="letter-r">R</span>
+        <span class="letter-i">I</span>
+        <span class="letter-s">S</span>
+    </div>
+    <canvas id='gameBoard' width="320" height="640"></canvas>
+    <div class="game-info">
+        <p id="playerId">Игрок: </p>
+        <p id="levelId">Уровень: </p>
+        <p id="lineId">Линии: </p>
+        <p id="scoreId">Очки: </p>
+        Следующая фигура:<br>
+        <canvas id='nextTetramino' width="128" height="128"></canvas>
+        <br>
+        <p>Управление:</p>
+        <p>Стрелка влево - пермещение фигуры влево</p>
+        <p>Стрелка вправо - перемещение фигуры вправо</p>
+        <p>Пробел / стрелка вниз - "Уронить фигуру"</p>
+        <p>Стрелка вверх - повернуть фигуру</p>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

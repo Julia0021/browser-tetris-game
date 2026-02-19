@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/start_screen_style.css" />
+</head>
+<body class="main">
+    <div class="word-tetris">
+            <span class="letter-t1">T</span>
+            <span class="letter-e">E</span>
+            <span class="letter-t2">T</span>
+            <span class="letter-r">R</span>
+            <span class="letter-i">I</span>
+            <span class="letter-s">S</span>
+    </div>
+    <div class="input">
+        <form action="./game.html" method="get">
+            <p class="label">Введите имя пользователя:</p>
+            <label><input id="player" placeholder="Имя пользователя" maxlength="15" required></label>
+            <button class="start_button" type="submit" onclick="getUsername()">START</button>
+        </form>
+    </div>
+    <script src="./js/saveUsername.js"> </script>
+</body>
+</html>
